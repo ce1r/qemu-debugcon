@@ -1,0 +1,15 @@
+[package]
+name = "qemu-debugcon"
+version = "0.1.0"
+description = "Simple QEMU debugcon wrapper"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/ce1r/qemu-debugcon"
+categories = ["embedded", "no-std", "no-std::no-alloc"]
+
+[features]
+default = []
+log = ["dep:log"]
+
+[dependencies]
+log = { version = "0.4.29", optional = true }
